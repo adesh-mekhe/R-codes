@@ -1,0 +1,16 @@
+# Sample data
+data <- c(10, 20, 30, 40, 50, 20, 30, 40)
+
+# Calculate mean
+mean_value <- mean(data)
+
+# Calculate median
+median_value <- median(data)
+
+# Calculate mode
+mode_value <- as.numeric(names(sort(table(data), decreasing = TRUE)[1]))
+
+# Print results
+cat("Mean:", mean_value, "\n")
+cat("Median:", median_value, "\n")
+cat("Mode:", mode_value, "\n")
